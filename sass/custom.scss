@@ -1,0 +1,38 @@
+/* All custom attributes related to the documentation */
+
+.demo-head{
+    min-height: 100px;
+    padding: 2rem;
+    
+    h1{
+        width: auto;
+        color: #fff;
+    }
+    
+    span{
+        &.caption{
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 46px;
+            color: #fff;
+        }
+    }
+}
+
+.demo-main{    
+    .content-row{
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    code{        
+        width:100%;
+        background-color: #ddd;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}

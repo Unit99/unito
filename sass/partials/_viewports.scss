@@ -1,0 +1,23 @@
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Stylesheet contains all used variables for different viewports.
+File Github repo:
+Author: Sanjib Adhya
+Author URI: http://apeand.me
+Version: 0.2
+Date: 03/09/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+
+/* device based break points */
+$scrap: 320px;
+$mob: 576px;
+$tab: 768px;
+$desktop: 992px;
+$hd: 1200px;
+
+/* breakpoints in reverse order => occasionally used */
+$desktop_max: 1199.98px;
+$tab_max: 991.98px;
+$mob_max: 767.98px;
+$scrap_max: 575.98px;

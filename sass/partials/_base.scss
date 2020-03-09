@@ -1,0 +1,117 @@
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Base stysheet that contains default attributes. 
+File Github repo:
+Author: Sanjib Adhya
+Author URL: http://apeand.me
+Version: 0.1
+Date: 03/09/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+
+/*
+Index =>
+00. colors 
+01. font-family 
+02. font-weights 
+03. font-sizes 
+04. line-heights 
+05. headers 
+06. paragraph
+07. span
+08. anchor states
+09. list views,
+10. image
+11. figure
+12. object
+13. backgrounds
+14. tables
+15. forms (fieldset, caption, legends, labels, inputs, textarea)
+16. buttons (button inputs and native buttons)
+17. svg
+*/
+
+
+:root{
+    /*** 00. colors ***/
+    
+    /* base colors */
+    --primary: #0C13E9;
+    --secondary: #0AFFE6;
+    --dark: #000;
+    --white: #fff;
+    --yellow: #F1C519;
+    
+    /* alert colors */
+    --error: #F12A19;
+    --warning: #CFAA14;
+    --success: #63C923;
+    
+    /*** 01. font-family ***/
+    --default: 'Poppins', sans-serif;
+    
+    /*** 02. font-weights  ***/
+    --normal: 400;
+    --light: 300;
+    --medium: 500;
+    --black: 900;
+    
+    /*** 03. font-sizes ***/
+    --header1: 2.5rem;
+    --header2: 2rem;
+    --header3: 1.5rem;
+    --header4: .8rem;
+    --para: .8rem;
+}
+
+header{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--primary);
+    font-family: var(--default);
+}
+
+h1{
+    font-size: var(--header1);
+    font-weight: var(--black);
+    color: var(--white);
+}
+
+h2{
+    font-size: var(--header2);
+    font-weight: var(--medium);
+    color: var(--white);
+}
+
+h3{
+    font-size: var(--header3);
+    font-weight: var(--light);
+    color: var(--white);
+}
+
+h4{
+    font-size: var(--header4);
+    font-weight: var(--medium);
+    color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: inherit;
+    color: inherit;
+}
+
+hgroup{
+    font-family: var(--default);
+    color: var(--dark);
+}
+
+p, 
+span {
+    font-family: var(--default);
+    font-size: var(--para);
+    font-weight: var(--normal);
+    color: inherit;
+}

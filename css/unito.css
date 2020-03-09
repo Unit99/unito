@@ -1,0 +1,252 @@
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Unito => Stylesheet contains all general and HTML5 grid based
+attributes
+File Github repo:
+Author: Sanjib Adhya
+Author URI: http://apeand.me
+Version: 0.2
+Date: 03/09/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+/* imports */
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Reset stysheet to reset all globally used semantic's attributes.
+File Github repo:
+Author: Sanjib Adhya
+Author URL: http://apeand.me
+Version: 0.1
+Date: 03/09/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+/* line 12, ../sass/partials/_reset.scss */
+html, body { width: 100%; height: 100%; min-height: 100%; overflow-x: hidden; }
+
+/* line 19, ../sass/partials/_reset.scss */
+* { margin: 0; padding: 0; border: none; outline: none; border-radius: 0; box-shadow: none; box-sizing: border-box; background-color: transparent; font-family: sans-serif; font-size: 1rem; font-weight: normal; line-height: normal; text-align: left; color: #000; text-rendering: optimizeLegibility; font-smooth: auto; -webkit-font-smooting: antialiased; /* for macOS */ -moz-osx-font-smoothing: grayscale; /* for macOS */ }
+
+/* line 40, ../sass/partials/_reset.scss */
+*:before, *:after { content: ''; display: table; clear: both; width: 0; height: 0; font-size: 0; text-indent: -9999px; }
+
+/* line 50, ../sass/partials/_reset.scss */
+img { width: 100%; max-width: 100%; height: auto; }
+
+/* line 56, ../sass/partials/_reset.scss */
+a, a:hover, a:focus, a.active, a.selected, a.link, a:visited { display: inline-block; cursor: pointer; pointer-events: auto; font-family: inherit; color: inherit; text-decoration: none; }
+
+/* line 65, ../sass/partials/_reset.scss */
+ul, ol, li { list-style: none; }
+
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Base stysheet that contains default attributes. 
+File Github repo:
+Author: Sanjib Adhya
+Author URL: http://apeand.me
+Version: 0.1
+Date: 03/09/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+/*
+Index =>
+00. colors 
+01. font-family 
+02. font-weights 
+03. font-sizes 
+04. line-heights 
+05. headers 
+06. paragraph
+07. span
+08. anchor states
+09. list views,
+10. image
+11. figure
+12. object
+13. backgrounds
+14. tables
+15. forms (fieldset, caption, legends, labels, inputs, textarea)
+16. buttons (button inputs and native buttons)
+17. svg
+*/
+/* line 35, ../sass/partials/_base.scss */
+:root { /*** 00. colors ***/ /* base colors */ --primary: #0C13E9; --secondary: #0AFFE6; --dark: #000; --white: #fff; --yellow: #F1C519; /* alert colors */ --error: #F12A19; --warning: #CFAA14; --success: #63C923; /*** 01. font-family ***/ --default: 'Poppins', sans-serif; /*** 02. font-weights  ***/ --normal: 400; --light: 300; --medium: 500; --black: 900; /*** 03. font-sizes ***/ --header1: 2.5rem; --header2: 2rem; --header3: 1.5rem; --header4: .8rem; --para: .8rem; }
+
+/* line 67, ../sass/partials/_base.scss */
+header { width: 100%; min-height: 100px; background-color: var(--primary); font-family: var(--default); }
+
+/* line 74, ../sass/partials/_base.scss */
+h1 { font-size: var(--header1); font-weight: var(--black); color: var(--white); }
+
+/* line 80, ../sass/partials/_base.scss */
+h2 { font-size: var(--header2); font-weight: var(--medium); color: var(--white); }
+
+/* line 86, ../sass/partials/_base.scss */
+h3 { font-size: var(--header3); font-weight: var(--light); color: var(--white); }
+
+/* line 92, ../sass/partials/_base.scss */
+h4 { font-size: var(--header4); font-weight: var(--medium); color: var(--white); }
+
+/* line 98, ../sass/partials/_base.scss */
+h1, h2, h3, h4 { font-family: inherit; color: inherit; }
+
+/* line 106, ../sass/partials/_base.scss */
+hgroup { font-family: var(--default); color: var(--dark); }
+
+/* line 111, ../sass/partials/_base.scss */
+p, span { font-family: var(--default); font-size: var(--para); font-weight: var(--normal); color: inherit; }
+
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Stylesheet contains all used variables for different viewports.
+File Github repo:
+Author: Sanjib Adhya
+Author URI: http://apeand.me
+Version: 0.2
+Date: 03/09/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+/* device based break points */
+/* breakpoints in reverse order => occasionally used */
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Stylesheet contains HTML5 grid based attributes.
+File Github repo:
+Author: Sanjib Adhya
+Author URI: http://apeand.me
+Version: 0.2
+Date: 03/09/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+/* line 12, ../sass/partials/_grid.scss */
+.content-fluid { width: 100%; padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; }
+
+/* line 20, ../sass/partials/_grid.scss */
+.content-row { width: 100%; margin-left: -15px; margin-right: -15px; }
+
+/* line 26, ../sass/partials/_grid.scss */
+[class*='col-'] { width: 100%; position: relative; float: left; padding: 0 15px; }
+
+/* line 34, ../sass/partials/_grid.scss */
+.no-gutter [class*='col-'] { padding: 0; }
+
+@media screen and (min-width: 320px) { /* line 40, ../sass/partials/_grid.scss */
+  .col-xs-1 { width: 8.33333%; }
+  /* line 41, ../sass/partials/_grid.scss */
+  .col-xs-2 { width: 16.66667%; }
+  /* line 42, ../sass/partials/_grid.scss */
+  .col-xs-3 { width: 25%; }
+  /* line 43, ../sass/partials/_grid.scss */
+  .col-xs-4 { width: 33.33333%; }
+  /* line 44, ../sass/partials/_grid.scss */
+  .col-xs-5 { width: 41.66667%; }
+  /* line 45, ../sass/partials/_grid.scss */
+  .col-xs-6 { width: 50%; }
+  /* line 46, ../sass/partials/_grid.scss */
+  .col-xs-7 { width: 58.33333%; }
+  /* line 47, ../sass/partials/_grid.scss */
+  .col-xs-8 { width: 66.66667%; }
+  /* line 48, ../sass/partials/_grid.scss */
+  .col-xs-9 { width: 75%; }
+  /* line 49, ../sass/partials/_grid.scss */
+  .col-xs-10 { width: 83.33333%; }
+  /* line 50, ../sass/partials/_grid.scss */
+  .col-xs-11 { width: 91.66667%; }
+  /* line 51, ../sass/partials/_grid.scss */
+  .col-xs-12 { width: 100%; } }
+@media screen and (min-width: 576px) { /* line 56, ../sass/partials/_grid.scss */
+  .col-sm-1 { width: 8.33333%; }
+  /* line 57, ../sass/partials/_grid.scss */
+  .col-sm-2 { width: 16.66667%; }
+  /* line 58, ../sass/partials/_grid.scss */
+  .col-sm-3 { width: 25%; }
+  /* line 59, ../sass/partials/_grid.scss */
+  .col-sm-4 { width: 33.33333%; }
+  /* line 60, ../sass/partials/_grid.scss */
+  .col-sm-5 { width: 41.66667%; }
+  /* line 61, ../sass/partials/_grid.scss */
+  .col-sm-6 { width: 50%; }
+  /* line 62, ../sass/partials/_grid.scss */
+  .col-sm-7 { width: 58.33333%; }
+  /* line 63, ../sass/partials/_grid.scss */
+  .col-sm-8 { width: 66.66667%; }
+  /* line 64, ../sass/partials/_grid.scss */
+  .col-sm-9 { width: 75%; }
+  /* line 65, ../sass/partials/_grid.scss */
+  .col-sm-10 { width: 83.33333%; }
+  /* line 66, ../sass/partials/_grid.scss */
+  .col-sm-11 { width: 91.66667%; }
+  /* line 67, ../sass/partials/_grid.scss */
+  .col-sm-12 { width: 100%; } }
+@media screen and (min-width: 768px) { /* line 71, ../sass/partials/_grid.scss */
+  .col-md-1 { width: 8.33333%; }
+  /* line 72, ../sass/partials/_grid.scss */
+  .col-md-2 { width: 16.66667%; }
+  /* line 73, ../sass/partials/_grid.scss */
+  .col-md-3 { width: 25%; }
+  /* line 74, ../sass/partials/_grid.scss */
+  .col-md-4 { width: 33.33333%; }
+  /* line 75, ../sass/partials/_grid.scss */
+  .col-md-5 { width: 41.66667%; }
+  /* line 76, ../sass/partials/_grid.scss */
+  .col-md-6 { width: 50%; }
+  /* line 77, ../sass/partials/_grid.scss */
+  .col-md-7 { width: 58.33333%; }
+  /* line 78, ../sass/partials/_grid.scss */
+  .col-md-8 { width: 66.66667%; }
+  /* line 79, ../sass/partials/_grid.scss */
+  .col-md-9 { width: 75%; }
+  /* line 80, ../sass/partials/_grid.scss */
+  .col-md-10 { width: 83.33333%; }
+  /* line 81, ../sass/partials/_grid.scss */
+  .col-md-11 { width: 91.66667%; }
+  /* line 82, ../sass/partials/_grid.scss */
+  .col-md-12 { width: 100%; } }
+@media screen and (min-width: 992px) { /* line 86, ../sass/partials/_grid.scss */
+  .col-lg-1 { width: 8.33333%; }
+  /* line 87, ../sass/partials/_grid.scss */
+  .col-lg-2 { width: 16.66667%; }
+  /* line 88, ../sass/partials/_grid.scss */
+  .col-lg-3 { width: 25%; }
+  /* line 89, ../sass/partials/_grid.scss */
+  .col-lg-4 { width: 33.33333%; }
+  /* line 90, ../sass/partials/_grid.scss */
+  .col-lg-5 { width: 41.66667%; }
+  /* line 91, ../sass/partials/_grid.scss */
+  .col-lg-6 { width: 50%; }
+  /* line 92, ../sass/partials/_grid.scss */
+  .col-lg-7 { width: 58.33333%; }
+  /* line 93, ../sass/partials/_grid.scss */
+  .col-lg-8 { width: 66.66667%; }
+  /* line 94, ../sass/partials/_grid.scss */
+  .col-lg-9 { width: 75%; }
+  /* line 95, ../sass/partials/_grid.scss */
+  .col-lg-10 { width: 83.33333%; }
+  /* line 96, ../sass/partials/_grid.scss */
+  .col-lg-11 { width: 91.66667%; }
+  /* line 97, ../sass/partials/_grid.scss */
+  .col-lg-12 { width: 100%; } }
+@media screen and (min-width: 1200px) { /* line 101, ../sass/partials/_grid.scss */
+  .col-xl-1 { width: 8.33333%; }
+  /* line 102, ../sass/partials/_grid.scss */
+  .col-xl-2 { width: 16.66667%; }
+  /* line 103, ../sass/partials/_grid.scss */
+  .col-xl-3 { width: 25%; }
+  /* line 104, ../sass/partials/_grid.scss */
+  .col-xl-4 { width: 33.33333%; }
+  /* line 105, ../sass/partials/_grid.scss */
+  .col-xl-5 { width: 41.66667%; }
+  /* line 106, ../sass/partials/_grid.scss */
+  .col-xl-6 { width: 50%; }
+  /* line 107, ../sass/partials/_grid.scss */
+  .col-xl-7 { width: 58.33333%; }
+  /* line 108, ../sass/partials/_grid.scss */
+  .col-xl-8 { width: 66.66667%; }
+  /* line 109, ../sass/partials/_grid.scss */
+  .col-xl-9 { width: 75%; }
+  /* line 110, ../sass/partials/_grid.scss */
+  .col-xl-10 { width: 83.33333%; }
+  /* line 111, ../sass/partials/_grid.scss */
+  .col-xl-11 { width: 91.66667%; }
+  /* line 112, ../sass/partials/_grid.scss */
+  .col-xl-12 { width: 100%; } }
