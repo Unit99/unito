@@ -1,11 +1,14 @@
 /* All custom attributes related to the documentation */
 
+@import 'partials/viewports';
+
 .demo-head{
     min-height: 100px;
     padding: 2rem;
     
     h1{
         width: auto;
+        line-height: 46px;
         color: #fff;
     }
     
@@ -13,8 +16,13 @@
         &.caption{
             font-size: 1rem;
             font-weight: 300;
-            line-height: 46px;
+            line-height: normal;
             color: #fff;
+            
+            /* for all devices of width >= 1920px */
+            @media (min-width: $hd + 720px){                
+                line-height: 50px;
+            }
         }
     }
 }
