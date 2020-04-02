@@ -378,6 +378,69 @@ File Github repo:
 Author: Sanjib Adhya
 Author URI: http://apeand.me
 Version: 0.1
-Date: 03/15/20
+Date: 03/25/20
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 *****/
+/* setting display to flexbox */
+/* line 13, ../sass/partials/_flex.scss */
+.flx-blc { display: flex; flex: 0 0 1; /* flex directions */ /* flex-wrap */ /* justify content */ /* align items */ /* align content */ /* align-self */ }
+/* line 18, ../sass/partials/_flex.scss */
+.flx-blc.dir-col { flex-direction: column; }
+/* line 22, ../sass/partials/_flex.scss */
+.flx-blc.dir-col-rev { flex-direction: column-reverse; }
+/* line 26, ../sass/partials/_flex.scss */
+.flx-blc.dir-row { flex-direction: row; }
+/* line 30, ../sass/partials/_flex.scss */
+.flx-blc.dir-row-rev { flex-direction: row-reverse; }
+/* line 35, ../sass/partials/_flex.scss */
+.flx-blc.wrap { flex-wrap: wrap; }
+/* line 39, ../sass/partials/_flex.scss */
+.flx-blc.wrap-rev { flex-wrap: wrap-reverse; }
+/* line 43, ../sass/partials/_flex.scss */
+.flx-blc.nowrap { flex-wrap: nowrap; }
+/* line 48, ../sass/partials/_flex.scss */
+.flx-blc.ju-start { justify-content: flex-start; }
+/* line 52, ../sass/partials/_flex.scss */
+.flx-blc.ju-end { justify-content: flex-end; }
+/* line 56, ../sass/partials/_flex.scss */
+.flx-blc.ju-mid { justify-content: center; }
+/* line 60, ../sass/partials/_flex.scss */
+.flx-blc.ju-even { justify-content: space-evenly; }
+/* line 64, ../sass/partials/_flex.scss */
+.flx-blc.ju-around { justify-content: space-around; }
+/* line 68, ../sass/partials/_flex.scss */
+.flx-blc.ju-between { justify-content: space-between; }
+/* line 73, ../sass/partials/_flex.scss */
+.flx-blc.aln-start { align-items: flex-start; }
+/* line 77, ../sass/partials/_flex.scss */
+.flx-blc.aln-end { align-items: flex-end; }
+/* line 81, ../sass/partials/_flex.scss */
+.flx-blc.aln-mid { align-items: center; }
+/* line 85, ../sass/partials/_flex.scss */
+.flx-blc.aln-base { align-items: baseline; }
+/* line 89, ../sass/partials/_flex.scss */
+.flx-blc.aln-str { align-items: stretch; }
+/* line 94, ../sass/partials/_flex.scss */
+.flx-blc.aln-con--start { align-content: flex-start; }
+/* line 98, ../sass/partials/_flex.scss */
+.flx-blc.aln-con--end { align-content: flex-end; }
+/* line 102, ../sass/partials/_flex.scss */
+.flx-blc.aln-con--center { align-content: center; }
+/* line 106, ../sass/partials/_flex.scss */
+.flx-blc.aln-con--between { align-content: space-between; }
+/* line 110, ../sass/partials/_flex.scss */
+.flx-blc.aln-con--around { align-content: space-around; }
+/* line 114, ../sass/partials/_flex.scss */
+.flx-blc.aln-con--str { align-content: stretch; }
+/* line 119, ../sass/partials/_flex.scss */
+.flx-blc .aln-self--base { align-self: baseline; }
+/* line 123, ../sass/partials/_flex.scss */
+.flx-blc .aln-self--start { align-self: flex-start; }
+/* line 127, ../sass/partials/_flex.scss */
+.flx-blc .aln-self--end { align-self: flex-end; }
+/* line 131, ../sass/partials/_flex.scss */
+.flx-blc .aln-self--center { align-self: center; }
+/* line 135, ../sass/partials/_flex.scss */
+.flx-blc .aln-self--str { align-self: stretch; }
+/* line 139, ../sass/partials/_flex.scss */
+.flx-blc .aln-self--auto { align-self: auto; }

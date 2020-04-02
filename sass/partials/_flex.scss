@@ -1,0 +1,144 @@
+/*****
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+File name: Stylesheet contains all flexbox attributes that will control positioning of elements inside columns
+File Github repo:
+Author: Sanjib Adhya
+Author URI: http://apeand.me
+Version: 0.1
+Date: 03/25/20
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*****/
+
+/* setting display to flexbox */
+.flx-blc{
+    display: flex;
+    flex: 0 0 1;
+    
+    /* flex directions */    
+    &.dir-col{
+        flex-direction: column;
+    }
+    
+    &.dir-col-rev{
+        flex-direction: column-reverse;
+    }
+    
+    &.dir-row{
+        flex-direction: row;
+    }
+    
+    &.dir-row-rev{
+        flex-direction: row-reverse;
+    }
+    
+    /* flex-wrap */
+    &.wrap{
+        flex-wrap: wrap;
+    }
+    
+    &.wrap-rev{
+        flex-wrap: wrap-reverse;
+    }
+    
+    &.nowrap{
+        flex-wrap: nowrap;
+    }
+    
+    /* justify content */
+    &.ju-start{
+        justify-content: flex-start;
+    }
+    
+    &.ju-end{
+        justify-content: flex-end;
+    }
+    
+    &.ju-mid{
+        justify-content: center;
+    }
+    
+    &.ju-even{
+        justify-content: space-evenly;
+    }
+    
+    &.ju-around{
+        justify-content: space-around;
+    }
+    
+    &.ju-between{
+        justify-content: space-between;
+    }
+    
+    /* align items */
+    &.aln-start{
+        align-items: flex-start;
+    }
+    
+    &.aln-end{
+        align-items: flex-end;
+    }
+    
+    &.aln-mid{
+        align-items: center;
+    }
+    
+    &.aln-base{
+        align-items: baseline;
+    }
+    
+    &.aln-str{
+        align-items: stretch;
+    }
+    
+    /* align content */
+    &.aln-con--start{
+        align-content: flex-start;
+    }
+    
+    &.aln-con--end{
+        align-content: flex-end;
+    }
+    
+    &.aln-con--center{
+        align-content: center;
+    }
+    
+    &.aln-con--between{
+        align-content: space-between;
+    }
+    
+    &.aln-con--around{
+        align-content: space-around;
+    }
+    
+    &.aln-con--str{
+        align-content: stretch;
+    }
+    
+    /* align-self */
+    .aln-self--base{
+        align-self: baseline;
+    }
+    
+    .aln-self--start{
+        align-self: flex-start;
+    }
+    
+    .aln-self--end{
+        align-self: flex-end;
+    }
+    
+    .aln-self--center{
+        align-self: center;
+    }
+    
+    .aln-self--str{
+        align-self: stretch;
+    }
+    
+    .aln-self--auto{
+        align-self: auto;
+    }
+}
+
+
